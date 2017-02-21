@@ -65,7 +65,19 @@ namespace Group20
             DateTime date = new DateTime(2017, 2, 21, 19, 54, 00);
             date = DateTime.Now;
             Console.WriteLine(date);
+            //TimeSpan span = date - DateTime.Now;
 
+            //string inp = Console.ReadLine();
+            //int day1 = int.Parse(inp); //21
+            string inp = Console.ReadLine();
+            DateTime date1 = DateTime.Parse(inp);
+
+            int x = 100;
+            double y = 56.5555;
+            string s = "qwerty";
+
+            Console.WriteLine("X = " + x + " " + y +" "+ s);
+            
         }
     }
 }
