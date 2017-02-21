@@ -1,0 +1,6 @@
+C:\Users\Alex-Vaio\Desktop\Group20\Group20\bin\Debug\Group20.exe.config
+C:\Users\Alex-Vaio\Desktop\Group20\Group20\bin\Debug\Group20.exe
+C:\Users\Alex-Vaio\Desktop\Group20\Group20\bin\Debug\Group20.pdb
+C:\Users\Alex-Vaio\Desktop\Group20\Group20\obj\Debug\Group20.csprojResolveAssemblyReference.cache
+C:\Users\Alex-Vaio\Desktop\Group20\Group20\obj\Debug\Group20.exe
+C:\Users\Alex-Vaio\Desktop\Group20\Group20\obj\Debug\Group20.pdb
