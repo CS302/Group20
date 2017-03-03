@@ -144,12 +144,18 @@ namespace Lesson2
             table[1, 0] = 4;
             table[1, 1] = 5;
             table[1, 2] = 6;
+            int x = Math.Abs(-15);
+            double y = Math.Pow(2, 10);// 2^10=1024
+            int num = int.Parse(Console.ReadLine());
+            //github.com/cs302/Group20
 
+            int[,] tab = new int[3, 4];
+            Random rnd = new Random();
             for (int i = 0; i < table.GetLength(0); i++)
             {
                 for (int j = 0; j < table.GetLength(1); j++)
                 {
-                    Console.Write(table[i, j] + " ");
+                    table[i, j] = rnd.Next(1, 101);//[1, 100]
                 }
                 Console.WriteLine();
             }
