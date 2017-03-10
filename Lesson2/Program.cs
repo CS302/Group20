@@ -130,13 +130,12 @@ namespace Lesson2
             }
             Console.WriteLine();
 
-
             int[] vec = new int[5] { 1, 2, 3, 4, 5 };
             for (int i = 0; i < vec.GetLength(0); i++)
             {
                 Console.WriteLine(vec[i]);
             }
-
+            
             int[,] table = new int[2, 3]; //2 строки, 3 столбца
             table[0, 0] = 1;
             table[0, 1] = 2;
@@ -151,11 +150,16 @@ namespace Lesson2
 
             int[,] tab = new int[3, 4];
             Random rnd = new Random();
+            int mult = 1;
             for (int i = 0; i < table.GetLength(0); i++)
             {
                 for (int j = 0; j < table.GetLength(1); j++)
                 {
-                    table[i, j] = rnd.Next(1, 101);//[1, 100]
+                    //table[i, j] = rnd.Next(1, 101);//[1, 100]
+                    if (tab[i,j]<0)
+                    {
+                        mult *= tab[i, j];
+                    }
                 }
                 Console.WriteLine();
             }
