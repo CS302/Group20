@@ -25,6 +25,14 @@ namespace Lesson3
     {
         static void Main(string[] args)
         {
+            //Random rnd = new Random();
+            //int n = rnd.Next(5, 11);
+            //Worker[] workers1 = new Worker[n];
+            //for (int i = 0; i < n; i++)
+            //{
+            //    workers1[i] = new Driver("qwer", )
+            //}
+
             Worker[] workers = new Worker[3];
             workers[0] = new Driver("John", 45, 98653, 256, "Audi");
             workers[1] = new Manager("Ivan", 29, 495346, 5);
@@ -152,7 +160,7 @@ namespace Lesson3
         }
     }
 
-    class Manager : Worker
+    class Manager : Worker, IPayTax
     {
         public int projCount;
 
@@ -174,8 +182,17 @@ namespace Lesson3
             Console.WriteLine("Кол-во проектов: " + projCount);
             Console.WriteLine();
         }
+
+        public double PayTax()
+        {
+            return salary * 0.13;
+        }
     }
 
+    interface IPayTax
+    {
+        double PayTax();
+    }
     //class SuperDriver : Driver //- наследование запрещено
     //{ }
 }
