@@ -26,25 +26,25 @@ namespace Lesson3
         static void Main(string[] args)
         {
             Worker[] workers = new Worker[3];
-            workers[0] = new Worker("John", 27, 6845643);
-            workers[1] = new Worker("Ivan", 37, 6843597);
-            workers[2] = new Worker("Hulk", 50);
+            workers[0] = new Driver("John", 45, 98653, 256, "Audi");
+            workers[1] = new Manager("Ivan", 29, 495346, 5);
+            workers[2] = new Manager("Hulk", 59, 9798653, 15);
 
+            
             Worker.PrintWorkers(workers);
 
-            Console.WriteLine(Worker.count);
             
         }
-
-        
+       
     }
 
-    class Worker //объектный класс
+    abstract class Worker //абстрактный класс
     {
         private string name; //поле (перменная принадлежит объекту (worker1.name))
         private int age; //поле
         public int snn; //поле
         public static int count; //поле (переменная, которая принадлежит классу вцелом (Worker.count))
+        protected double salary;
 
         public string Name
         {
@@ -86,13 +86,15 @@ namespace Lesson3
         {
             return age;
         }
+
+        public abstract double GetBonus();
         
-        public void Print()
+        public virtual void Print()
         {
             Console.WriteLine("Имя: " + name);
             Console.WriteLine("Возраст: " + age);
             Console.WriteLine("ИНН: " + snn);
-            Console.WriteLine();
+            Console.WriteLine("Зарплата: " + salary);
         }
 
         public static void PrintWorkers(Worker[] workers)
@@ -100,6 +102,7 @@ namespace Lesson3
             for (int i = 0; i < workers.Length; i++)
             {
                 workers[i].Print();
+                Console.WriteLine();
             }
         }
 
@@ -113,6 +116,7 @@ namespace Lesson3
             this.name = name; //this указывает на член класса
             Age = age; //передаем значение свойству, чтобы выполнились проверки
             this.snn = snn;
+            this.salary = 30000;
             count = count + 1;
         }
 
@@ -120,4 +124,58 @@ namespace Lesson3
             : this(name, age, 0)
         {   }
     }
+
+    sealed class Driver : Worker // запечатанный/стерильный
+    {
+        public int hours;
+        public string carType;
+
+        public Driver(string name, int age, int snn, int hours, string carType)
+            : base(name, age, snn) //обращение к базовому (самому базовому) конструктору Worker
+        {
+            this.hours = hours;
+            this.carType = carType;
+            salary = 45000;
+        }
+
+        public override double GetBonus()
+        {
+            return hours * 50;
+        }
+
+        public override void Print()
+        {
+            base.Print();
+            Console.WriteLine("Кол-во часов: " + hours);
+            Console.WriteLine("Машина: " + carType);
+            Console.WriteLine();
+        }
+    }
+
+    class Manager : Worker
+    {
+        public int projCount;
+
+        public Manager(string name, int age, int snn, int projCount)
+            : base(name, age, snn)
+        {
+            this.projCount = projCount;
+            this.salary = 50000;
+        }
+
+        public override double GetBonus()
+        {
+            return projCount * 1000;
+        }
+
+        public override void Print()
+        {
+            base.Print();
+            Console.WriteLine("Кол-во проектов: " + projCount);
+            Console.WriteLine();
+        }
+    }
+
+    //class SuperDriver : Driver //- наследование запрещено
+    //{ }
 }
