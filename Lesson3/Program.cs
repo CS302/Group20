@@ -139,6 +139,7 @@ namespace Lesson3
         public Worker(string name, int age) //второстепенный конструктор
             : this(name, age, 0)
         {   }
+
     }
 
     sealed class Driver : Worker // запечатанный/стерильный
@@ -203,4 +204,6 @@ namespace Lesson3
     }
     //class SuperDriver : Driver //- наследование запрещено
     //{ }
+
+    
 }
