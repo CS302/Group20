@@ -47,7 +47,10 @@ namespace Lesson6
             //Console.WriteLine(text.Remove(8, 3));
 
             //Console.WriteLine(text.Replace("Простая", "Сложная"));
-
+            if (text.Contains("тся") || text.Contains("ться"))
+            {
+                
+            }
             //string data = "561 684 321 987 321 145";
             //string[] items = data.Split(' ');
             //int sum = 0;

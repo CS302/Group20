@@ -1,0 +1,5 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson7_files\bin\Debug\Lesson7_files.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson7_files\bin\Debug\Lesson7_files.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson7_files\bin\Debug\Lesson7_files.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson7_files\obj\Debug\Lesson7_files.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson7_files\obj\Debug\Lesson7_files.pdb
