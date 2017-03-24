@@ -1,0 +1,6 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_xml\bin\Debug\Lesson8_xml.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_xml\bin\Debug\Lesson8_xml.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_xml\bin\Debug\Lesson8_xml.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_xml\obj\Debug\Lesson8_xml.csprojResolveAssemblyReference.cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_xml\obj\Debug\Lesson8_xml.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_xml\obj\Debug\Lesson8_xml.pdb

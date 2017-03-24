@@ -25,7 +25,8 @@ namespace Lesson7_files
         {
             FileStream stream = new FileStream("Point.txt", FileMode.Open, FileAccess.Read);
             StreamReader reader = new StreamReader(stream);
-            
+            //string path = Environment.CurrentDirectory;
+            //C:\Lesson7\myProj
             //считывает все в одну строку
             //string str = reader.ReadToEnd();
 
@@ -44,6 +45,7 @@ namespace Lesson7_files
             reader.Close();
 
             Point p = new Point(x, y, label);
+            
             return p;
         }
 

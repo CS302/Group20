@@ -1,0 +1,8 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_Collections\bin\Debug\Lesson8_Collections.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_Collections\bin\Debug\Lesson8_Collections.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_Collections\bin\Debug\Lesson8_Collections.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_Collections\bin\Debug\WorkersLibrary.dll
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_Collections\bin\Debug\WorkersLibrary.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_Collections\obj\Debug\Lesson8_Collections.csprojResolveAssemblyReference.cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_Collections\obj\Debug\Lesson8_Collections.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson8_Collections\obj\Debug\Lesson8_Collections.pdb

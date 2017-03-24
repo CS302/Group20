@@ -53,7 +53,7 @@ namespace Lesson7
             string fileName = "data.txt";
 
             string path1 = dir + "\\" + temp + "\\" + fileName;
-            path1 = String.Format(@"{0}\{1}\{2}", dir, temp, fileName);
+            //path1 = String.Format($"{dir}\{temp}\{fileName}");
             path1 = Path.Combine(dir, temp, fileName);
             Console.WriteLine(path1);
         }
