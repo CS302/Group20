@@ -1,0 +1,6 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\bin\Debug\Lesson9_Types_Methods.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\bin\Debug\Lesson9_Types_Methods.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\bin\Debug\Lesson9_Types_Methods.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\obj\Debug\Lesson9_Types_Methods.csprojResolveAssemblyReference.cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\obj\Debug\Lesson9_Types_Methods.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\obj\Debug\Lesson9_Types_Methods.pdb
