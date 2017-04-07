@@ -6,14 +6,26 @@ using System.Threading.Tasks;
 
 namespace WorkersLibrary
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public abstract class Worker //абстрактный класс
     {
+        #region Мои супер-поля
+        /// <summary>
+        /// Поле: Имя работника
+        /// </summary>
         private string name; //поле (перменная принадлежит объекту (worker1.name))
+        /// <summary>
+        /// Поле: Возраст работника
+        /// </summary>
         private int age; //поле
         public int snn; //поле
         public static int count; //поле (переменная, которая принадлежит классу вцелом (Worker.count))
         protected double salary;
-
+        #endregion
+        
+        #region Свойства
         public string Name
         {
             get { return name; }
@@ -37,8 +49,10 @@ namespace WorkersLibrary
             {
                 return age;
             }
-        }
+        } 
+        #endregion
 
+        #region Методы
         public void SetAge(int age)
         {
             if ((age >= 16) && (age < 65))
@@ -72,8 +86,10 @@ namespace WorkersLibrary
                 workers[i].Print();
                 Console.WriteLine();
             }
-        }
+        } 
+        #endregion
 
+        #region Конструкторы
         static Worker() //правило хорошего стиля
         {
             count = 0; //инициализация статичных полей класса
@@ -90,7 +106,8 @@ namespace WorkersLibrary
 
         public Worker(string name, int age) //второстепенный конструктор
             : this(name, age, 0)
-        { }
+        { } 
+        #endregion
 
     }
 }

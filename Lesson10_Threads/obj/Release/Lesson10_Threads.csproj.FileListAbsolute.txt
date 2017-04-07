@@ -1,0 +1,6 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson10_Threads\bin\Release\Lesson10_Threads.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson10_Threads\bin\Release\Lesson10_Threads.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson10_Threads\bin\Release\Lesson10_Threads.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson10_Threads\obj\Release\Lesson10_Threads.csprojResolveAssemblyReference.cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson10_Threads\obj\Release\Lesson10_Threads.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson10_Threads\obj\Release\Lesson10_Threads.pdb

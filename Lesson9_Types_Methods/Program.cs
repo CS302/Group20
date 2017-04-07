@@ -40,16 +40,18 @@ namespace Lesson9_Types_Methods
              * 1 2 1 2
              * 3 4 3 4
              */
-            int number;
-            bool flag = int.TryParse(Console.ReadLine(), out number);
-            if (flag == true)
-            {
-                Console.WriteLine(number * number);                
-            }
-            else
-            {
-                Console.WriteLine("Error");
-            }
+            //int number;
+            //bool flag = int.TryParse(Console.ReadLine(), out number);
+            //if (flag == true)
+            //{
+            //    Console.WriteLine(number * number);                
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Error");
+
+            //int x = int.Parse(Console.ReadLine());
+            //}
         }
 
         static void Switch(ref int a, ref int b)
