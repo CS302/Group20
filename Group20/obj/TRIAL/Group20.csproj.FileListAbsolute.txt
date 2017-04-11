@@ -1,0 +1,6 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Group20\bin\TRIAL\Group20.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Group20\bin\TRIAL\Group20.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Group20\bin\TRIAL\Group20.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Group20\obj\TRIAL\Group20.csprojResolveAssemblyReference.cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Group20\obj\TRIAL\Group20.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Group20\obj\TRIAL\Group20.pdb

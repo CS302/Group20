@@ -49,7 +49,13 @@ namespace WorkersLibrary
             {
                 return age;
             }
-        } 
+        }
+
+        public int Snn
+        { 
+            get { return snn; }
+            set { snn = value; }
+        }
         #endregion
 
         #region Методы

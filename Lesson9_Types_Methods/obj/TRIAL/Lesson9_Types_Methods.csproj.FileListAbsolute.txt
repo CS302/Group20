@@ -1,0 +1,5 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\bin\TRIAL\Lesson9_Types_Methods.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\bin\TRIAL\Lesson9_Types_Methods.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\bin\TRIAL\Lesson9_Types_Methods.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\obj\TRIAL\Lesson9_Types_Methods.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\Lesson9_Types_Methods\obj\TRIAL\Lesson9_Types_Methods.pdb

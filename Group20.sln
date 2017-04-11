@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10", "Lesson10\Lesson
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10_Threads", "Lesson10_Threads\Lesson10_Threads.csproj", "{FFD9E201-6BA1-4769-B175-7A21E5A13D59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkersEditor", "WorkersEditor\WorkersEditor.csproj", "{20F16719-717C-4C20-B2AA-18D5B57E7A31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -130,6 +132,12 @@ Global
 		{FFD9E201-6BA1-4769-B175-7A21E5A13D59}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FFD9E201-6BA1-4769-B175-7A21E5A13D59}.TRIAL|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD9E201-6BA1-4769-B175-7A21E5A13D59}.TRIAL|Any CPU.Build.0 = Release|Any CPU
+		{20F16719-717C-4C20-B2AA-18D5B57E7A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F16719-717C-4C20-B2AA-18D5B57E7A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F16719-717C-4C20-B2AA-18D5B57E7A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F16719-717C-4C20-B2AA-18D5B57E7A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F16719-717C-4C20-B2AA-18D5B57E7A31}.TRIAL|Any CPU.ActiveCfg = Release|Any CPU
+		{20F16719-717C-4C20-B2AA-18D5B57E7A31}.TRIAL|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

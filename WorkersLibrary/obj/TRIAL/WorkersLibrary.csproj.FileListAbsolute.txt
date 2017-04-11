@@ -1,0 +1,4 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\WorkersLibrary\bin\TRIAL\WorkersLibrary.dll
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\WorkersLibrary\bin\TRIAL\WorkersLibrary.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\WorkersLibrary\obj\TRIAL\WorkersLibrary.dll
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\WorkersLibrary\obj\TRIAL\WorkersLibrary.pdb

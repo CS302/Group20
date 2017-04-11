@@ -8,8 +8,20 @@ namespace WorkersLibrary
 {
     public sealed class Driver : Worker // запечатанный/стерильный
     {
-        public int hours;
-        public string carType;
+        private int hours;
+
+        public int Hours
+        {
+            get { return hours; }
+            set { hours = value; }
+        }
+        private string carType;
+
+        public string CarType
+        {
+            get { return carType; }
+            set { carType = value; }
+        }
 
         public Driver(string name, int age, int snn, int hours, string carType)
             : base(name, age, snn) //обращение к базовому (самому базовому) конструктору Worker
