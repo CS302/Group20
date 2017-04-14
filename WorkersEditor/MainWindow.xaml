@@ -1,7 +1,7 @@
 ﻿<Window x:Class="WorkersEditor.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="450" Width="700">
+        Title="MainWindow" Height="500" Width="700">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -21,25 +21,25 @@
         <StackPanel Name="detailsPanel" Grid.Column="1" Orientation="Vertical">
             <StackPanel Margin="0 20 0 0" Orientation="Horizontal">
                 <TextBlock Text="Имя" Width="150" FontSize="24"/>
-                <TextBox Text="{Binding Name}" Width="150" FontSize="24"/>
+                <TextBox Name="_TB_name" Text="{Binding Name}" Width="150" FontSize="24"/>
             </StackPanel>
             <StackPanel Margin="0 20 0 0" Orientation="Horizontal">
                 <TextBlock Text="Возраст" Width="150" FontSize="24"/>
-                <TextBox Text="{Binding Age}" Width="150" FontSize="24"/>
+                <TextBox Name="_TB_age" Text="{Binding Age}" Width="150" FontSize="24"/>
             </StackPanel>
             <StackPanel Margin="0 20 0 0" Orientation="Horizontal">
                 <TextBlock Text="ИНН" Width="150" FontSize="24"/>
-                <TextBox Text="{Binding Snn}" Width="150" FontSize="24"/>
+                <TextBox Name="_TB_snn" Text="{Binding Snn}" Width="150" FontSize="24"/>
             </StackPanel>
 
             <StackPanel Name="drInfo" Orientation="Vertical">
                 <StackPanel Margin="0 20 0 0" Orientation="Horizontal">
                     <TextBlock Text="Машина" Width="150" FontSize="24"/>
-                    <TextBox Text="{Binding CarType}" Width="150" FontSize="24"/>
+                    <TextBox Name="_TB_car" Text="{Binding CarType}" Width="150" FontSize="24"/>
                 </StackPanel>
                 <StackPanel Margin="0 20 0 0" Orientation="Horizontal">
                     <TextBlock Text="Часы" Width="150" FontSize="24"/>
-                    <TextBox Text="{Binding Hours}" Width="150" FontSize="24"/>
+                    <TextBox Name="_TB_hours" Text="{Binding Hours}" Width="150" FontSize="24"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Name="manInfo" Margin="0 20 0 0" Orientation="Horizontal">
@@ -47,6 +47,7 @@
                 <TextBox Text="{Binding ProjCount}" Width="150" FontSize="24"/>
             </StackPanel>
             <Button Content="Удалить" Margin="0 20 0 0" FontSize="20" Click="Button_Click"/>
+            <Button Content="Добавить" Margin="0 20 0 0" FontSize="20" Name="_BTN_Add" Click="_BTN_Add_Click"/>
         </StackPanel>
     </Grid>
 </Window>

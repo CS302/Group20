@@ -1,18 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using WorkersLibrary;
 
 namespace WorkersEditor
@@ -23,17 +14,46 @@ namespace WorkersEditor
     public partial class MainWindow : Window
     {
         public ObservableCollection<Worker> Workers { get; set; }
+        private string connectionString = @"Data Source=ALEX-VAIO-ПК\SQLEXPRESS;Initial Catalog=Workers;Integrated Security=True";
         public MainWindow()
         {
             InitializeComponent();
             Workers = new ObservableCollection<Worker>();
-            Workers.Add(new Driver("John", 28, 123456, 256, "BMW"));
-            Workers.Add(new Driver("Ivan", 38, 456123, 128, "UAZ"));
-            Workers.Add(new Manager("Hulk", 58, 789456, 15));
-            Workers.Add(new Manager("Linda", 35, 89621, 10));
-            Workers.Add(new Manager("Max", 18, 7896412, 8));
 
+            LoadDrivers();
+            LoadManagers();
+            
             DataContext = this;
+        }
+
+        private void LoadDrivers()
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand("dbo.select_drivers", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Workers.Add(new Driver(reader["name"].ToString(), Convert.ToInt32(reader["age"]), Convert.ToInt32(reader["snn"]), Convert.ToInt32(reader["hours"]), reader["carType"].ToString()));
+            }
+            reader.Close();
+            connection.Close();
+        }
+
+        private void LoadManagers()
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand("dbo.select_managers", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Workers.Add(new Manager(reader["name"].ToString(), Convert.ToInt32(reader["age"]), Convert.ToInt32(reader["snn"]), Convert.ToInt32(reader["projCount"])));
+            }
+            reader.Close();
+            connection.Close();
         }
 
         private void workersList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -60,8 +80,42 @@ namespace WorkersEditor
             Worker delWorker = workersList.SelectedItem as Worker;
             if (delWorker != null)
             {
+                int snn = delWorker.Snn;
+                if (delWorker is Driver)
+                {
+                    SqlConnection connection = new SqlConnection(connectionString);
+                    SqlCommand command = new SqlCommand("dbo.delete_driver", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("snn", snn);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
+                if (delWorker is Manager)
+                {
+                    
+                }
                 Workers.Remove(delWorker);
                 workersList.SelectedIndex = 0;
+            }
+        }
+
+        private void _BTN_Add_Click(object sender, RoutedEventArgs e)
+        {
+            //проверка, что создаем водителя
+            Driver dr = new Driver(_TB_name.Text, int.Parse(_TB_age.Text), int.Parse(_TB_snn.Text), int.Parse(_TB_hours.Text), _TB_car.Text);
+            Workers.Add(dr);
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand("dbo.insert_driver", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("snn", int.Parse(_TB_snn.Text));
+                command.Parameters.AddWithValue("name", _TB_name.Text);
+                command.Parameters.AddWithValue("age", int.Parse(_TB_age.Text));
+                command.Parameters.AddWithValue("hours", int.Parse(_TB_hours.Text));
+                command.Parameters.AddWithValue("carType", _TB_car.Text);
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }

@@ -1,0 +1,13 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\bin\Release\newapp.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\bin\Release\newapp.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\bin\Release\newapp.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\newapp.csprojResolveAssemblyReference.cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\MainWindow.baml
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\MainWindow.g.cs
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\App.g.cs
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\newapp_MarkupCompile.cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\newapp.g.resources
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\newapp.Properties.Resources.resources
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\newapp.csproj.GenerateResource.Cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\newapp.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group20\newapp\obj\Release\newapp.pdb
